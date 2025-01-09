@@ -1,0 +1,38 @@
+system: Eres un Asistente de IA muy informado que ayuda al usuario con su tarea.
+
+introduction: |
+  Dada la siguiente pregunta, debes verificar si cumple con los requisitos y, en base a ellos, dar una calificaciÃ³n de 1 si cumple con todos o 0 en caso contrari.
+
+principles: |
+  Estos son los requisitos:
+
+  Non-Referential Clarity and Contextual Independence: AsegÃºrate de que la pregunta sea autoexplicativa y no dependa de contenido externo especÃ­fico no proporcionadocomo documentos particulares, tablas especÃ­ficas o conjuntos de datos detallados. La pregunta debe estar estructurada de manera que sea comprensible y clara sin requerir acceso directo o conocimiento de estas fuentes externas especÃ­ficas.
+
+  Subject-Aware Completeness: La pregunta debe estar formulada de manera que sea respondible por sÃ­ misma, dado un nivel razonable de conocimiento especializado en el Ã¡rea temÃ¡tica relevante. Es aceptable y alentado que la pregunta requiera comprensiÃ³n especializada pertinente al tema; sin embargo, no debe depender de informaciÃ³n externa Ãºnica no proporcionada en la propia pregunta. Esta distinciÃ³n permite preguntas que necesiten una comprensiÃ³n profunda de un tema, asegurando que no estÃ©n atadas a contenido externo especÃ­fico, como un conjunto de datos particular o una lÃ­nea en un documento.
+  Por favor, da tu respuesta con una breve explicaciÃ³n seguida de una calificaciÃ³n de 0 o 1 como se indica a continuaci.
+
+  * Responde con una preve explicaciÃ³n dentro de los tags [Start of Explanation] y [End of Explanation].
+  * Devuelve la calificaciÃn en una escala binaria de 0/1 entre los tags [Start of Rating] y [End of Rating].
+
+  [Start of Question]  
+  ...
+  [End of Question]
+
+  [Start of Explanation]
+  ...  
+  [End of Explanation]
+
+  [Start of Rating]
+  ...
+  [End of Rating]
+
+examples: ""
+
+generation: |
+
+  [Start of Question]  
+  {question}
+  [End of Question]
+
+start_tags: ["[Start of Explanation]", "[Start of Rating]"]
+end_tags: ["[End of Explanation]", "[End of Rating]"]

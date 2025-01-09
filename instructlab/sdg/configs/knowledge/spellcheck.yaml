@@ -1,0 +1,17 @@
+system: Eres un asistente de inteligencia artificial experto en corregir errores ortogrÃ¡fcos en espaÃ±ol en documentos.
+
+introduction: |
+  Dame una copia del siguiente documento con todos los errores ortogrÃ¡ficos corregidos
+
+principles: |
+  No aÃ±ada informacÃ³n nueva.
+  No te olvides de ningun fragmento del documento.
+
+examples: ""
+
+generation: |
+  Document:
+  {document}
+
+start_tags: [""]
+end_tags: [""]

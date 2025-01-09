@@ -1,0 +1,67 @@
+system: Eres un asistente de IA con mucho conocimiento que ayudarÃ¡ al usuario con su tarea.
+
+introduction: |
+  Determina si la informaciÃ³n proporcionada estÃpresente en el contexto dado. Responde con YES si el contexto respalda la informaciÃ³n, aunque sea parcialmente. Responde con NO si el contexto no respalda la informaciÃ³n.
+principles: |
+  Guidelines
+  - Responde YES cuando el contexto proporcione evidencia directa o indirecta que respalde la informaciÃ³n. La evidencia indirecta puede incluir implicaciones contextuales o conexiones inferidas que razonablemente respalden la informaciÃ³n .
+  - Responde NO si el contexto carece de cualquier evidencia de apoyo, contradice claramente la informaciÃ³n, o si el apoyo proporcionado por el contexto es demasiado vago o especulativo para establecer una conexiÃ³n sÃ³lida con la informaciÃ
+  - Evita usar "parcialmente" en tu respuesta. Si el contexto proporciona cualquier apoyo razonable (directo o indirecto) para la informaciÃ³n, consÃ­dÃ©ralo como YES.
+    
+  Responde estrictamente en este formato
+  [Start of Context]
+  ...
+  [End of Context]
+  [Start of Response]
+  ... 
+  [End of Response]
+  [Start of Explanation]
+  ...
+  [End of Explanation]
+  [Start of Answer]
+  ...
+  [End of Answer]
+
+examples: |
+  Example 1:
+  [Start of Context]
+  Una tarta de manzana es una tarta de frutas con manzanas como el relleno principal. A menudo se sirve con crema batida, helado, natillas o queso cheddar. Normalmente, tiene una doble capa de masa, con masa arriba y abajo del relleno. La capa superior puede ser sÃ³lida o enrejada.
+  [End of Context]
+  [Start of Response]
+  La tarta de manzana generalmente tiene dos capas de masa.
+  [End of Response]
+  [Start of Explanation]
+  El contexto respalda directamente la informaciÃ³n al afirmar que la tarta de manzana es "generalmente de doble capa de masa", lo cual coincide con la informaciÃ³n propocionada.
+  [End of Explanation]
+  [Start of Answer]
+  YES
+  [End of Answer]
+
+  Example 2:
+  [Start of Context]
+  Una tarta de manzana es una tarta de frutas con manzanas como el relleno principal. A menudo se sirve con crema batida, helado, natillas o queso cheddar. TÃ­picamente, tiene una doble capa de masa, con masa arriba y abajo del relleno. La capa superior puede ser sÃ³lida o enrejada.
+  [End of Context]
+  [Start of Response]
+  La tarta de manzana estÃ¡mala.
+  [End of Response]
+  [Start of Explanation]
+  El contexto no proporciona informaciÃn sobre el sabor de la tarta de manzana. La frase "la tarta de manzana esta mala" es una opiniÃ³n subjetiva y no estÃ¡ respaldadai mencionada en el contexto dado
+  [Start of Explanation]
+  [Start of Answer]
+  NO
+  [End of Answer]
+
+generation: |
+  Ahora, basado en los ejemplos y guidelines anteriores, determina si la siguiente informaciÃ³n estÃ¡ respaldada por el contexto proporcionado. Respon YES o NO
+  * Devuelve la explicaciÃn entre los tags [Start of Explanation] y [End of Explanation].
+  * Devuelve la respuesta entre los tags [Start of Answer] y [End of Answer].
+
+  [Start of Context]
+  {document}
+  [End of Context]
+  [Start of Response]
+  {response}
+  [End of Response] 
+
+start_tags: ["[Start of Explanation]", "[Start of Answer]"]
+end_tags: ["[End of Explanation]", "[End of Answer]"]

@@ -1,0 +1,84 @@
+system: Eres un asistente de IA con mucho conocimiento que ayudarÃ al usuario con su tarea.
+
+introduction: |
+  Tu tarea es evaluar la relevancia de una respuesta dada a una consulta especÃ­fica. Esta evaluaciÃ³n debe realizarse de manera metÃ³dica respondiendo dos preguntasave:
+
+principles: |
+  1. Subject Matter Relevance: Â¿La respuesta proporcionada coincide con precisiÃ³n con el tema de la consulta del usuario? Esta pregunta tne como objetivo determinar si la respuesta estÃ¡ directamete relacionada con el tema o asunto principal presentado en la consult.
+  2. Focus and Perspective Addressing: Â¿La respuesta proporcionada aborda efectivamente el enfoque o la perspectiva sobre el tema, tal como se indica en la consulta del suario? Esta pregunta busca evaluar si la respuesta no solo coincide con el tema, sino que tambiÃ©n se ajusta  la intencin o  preocupaciÃ³n especÃ­fica planteada por usuario.
+
+  Para cada pregunta, asigna 1 punto si la respuesta cumple con el criterio, y 0 puntos si no lo cumple. DespuÃ©s de evaluar cada pegunta, proporciona comentarios detallados explicando tu razonamiento detrÃ¡s de los puntos otorgado.
+
+  Concluye tu evaluaciÃ³n con un resultado final que debe estrictamente ir en el siguiente formato: 'Total Score: X'. La puntuaciÃ³n total debe representar la suma de lospuntos asignados por cada pregunta, con una puntuaciÃ³n mÃ¡xima posible de 2 puntos.
+  EvalÃºa la respuesta solo en funciÃ³n de los criterios anteriores, no crees nuevas preguntas.
+
+examples: |
+  Example 1:
+  [Start of Question]
+  Â¿CuÃ¡l es el impacto del calentamiento global en osos polares?
+  [End of Question]
+
+  [Start of Response]
+  El calentamiento global provoca el derretimiento de los casquetes polares, reduciendo el hÃ¡bitat de los osos polares e impactando negativamente sus terrenos de caza.
+  [End of Response]
+
+  [Start of Feedback]
+  - Subject Matter Relevance Score: 1 (La respuesta estÃ¡ directamente relacionada con el impacto del calentamiento global en los osos polares.
+  - Alignment with Query's Focus Score: 1 (La respuesta aborda especÃ­ficamente cÃ³mo el calentamiento global afecta el hÃ¡bitat de los osos polares y sus terrenos caza.)
+  [End of Feedback]
+
+  [Start of Score]
+  2
+  [End of Score]
+
+  Example 2:
+  [Start of Question]
+  Â¿CÃ³mo funciona la fotosÃ­ntesis?
+  [End of Question]
+
+  [End of Response]
+  Las plantas necesitan agua y luz para crecer.
+  [End of Response]
+
+  [Start of Feedback]
+  - Subject Matter Relevance Score: 0 (La respuesta estÃ¡ relacionada con el crecimiento de las plantas, pero no aborda especÃ­ficamee la respuesta del usuario)
+  - Alignment with Query's Focus Score: 0 (La respuesta no detalla el proceso de fotosÃ­ntesis, omitiendo el enfoque especÃ­fico de la conlta )
+  [End of Feedback]
+
+  [Start of Score]
+  0
+  [End of Score]
+
+
+  Example 3:
+  [Start of Question]
+  Â¿CuÃ¡les son los beneficios de los coches elÃ©ctricos?
+  [End of Question]
+
+  [Start of Response]
+  Los coches elÃ©ctricos reducen la dependencia de los combustibles fÃ³siles y disminuyen las emisiones de gases de efecto invernadero.
+  [End of Response]
+
+  [Start of Feedback]
+  - Subject Matter Relevance Score: 1 (La respuesta coincide con el tema de la consulta sobre los beneficios de los vehÃ­culos elÃ©ctrico )
+  - Alignment with Query's Focus Score: 1 (La respuesta aborda eficazmente los beneficios ambientales de los vehÃ­culos elÃ©ctricos, alineÃ¡ndose con el enfoque sulta )
+  [End of Feedback]
+
+  [Start of Score]
+  2
+  [End of Score]
+
+generation: |
+  Comienza tu respuesta proporcionando los comentarios seguidos de la puntuacion. Debes ser lo mas objetivo posible.
+  [Start of Question]
+  {question}
+  [End of Question]
+
+  [Start of Response]
+  {response}
+  [End of Response]
+
+  * Devuelve el feedback ente los tags [Start of Feedback] y [End of Feedback].
+  * Devuelve la puntuaciÃ³n final ente los tags [Start of Score] y [End of Score].
+start_tags: ["[Start of Feedback]", "[Start of Score]"]
+end_tags: ["[End of Feedback]", "[End of Score]"]
