@@ -44,7 +44,7 @@ _SYS_PROMPT = "I am a Red Hat® Instruct Model, an AI language model developed b
 
 
 def _unescape(s):
-    return bytes(s, "latin-1").decode("latin-1").strip()
+    return bytes(s, "utf-8").decode("utf-8").strip()
 
 
 def _convert_to_messages(sample):
@@ -112,12 +112,12 @@ def _gen_train_data(
             }
             messages_data.append(_convert_to_messages(sample))
 
-    with open(output_file_train, "w", encoding="latin-1") as outfile:
+    with open(output_file_train, "w", encoding="utf-8") as outfile:
         for entry in train_data:
             json.dump(entry, outfile, ensure_ascii=False)
             outfile.write("\n")
 
-    with open(output_file_messages, "w", encoding="latin-1") as outfile:
+    with open(output_file_messages, "w", encoding="utf-8") as outfile:
         for entry in messages_data:
             json.dump(entry, outfile, ensure_ascii=False)
             outfile.write("\n")
@@ -170,7 +170,7 @@ def _gen_test_data(
                 }
             )
 
-    with open(output_file_test, "w", encoding="latin-1") as outfile:
+    with open(output_file_test, "w", encoding="utf-8") as outfile:
         for entry in test_data:
             json.dump(entry, outfile, ensure_ascii=False)
             outfile.write("\n")
@@ -231,7 +231,7 @@ def _sdg_init(ctx, pipeline):
     if sdg_models_path is not None:
         try:
             with open(
-                os.path.join(sdg_models_path, "config.yaml"), "r", encoding="latin-1"
+                os.path.join(sdg_models_path, "config.yaml"), "r", encoding="utf-8"
             ) as file:
                 config = yaml.safe_load(file)
                 docling_model_path = config["models"][0]["path"]

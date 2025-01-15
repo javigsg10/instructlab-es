@@ -158,7 +158,7 @@ def _get_documents(
                     try:
                         if file_path.lower().endswith(".md"):
                             # Process Markdown files
-                            with open(file_path, "r", encoding="latin-1") as file:
+                            with open(file_path, "r", encoding="utf-8") as file:
                                 content = file.read()
                                 file_contents.append(content)
                                 filepaths.append(Path(file_path))
@@ -315,7 +315,7 @@ def read_taxonomy(
         yaml_rules_path = Path(yaml_rules)
         if yaml_rules_path.is_file():  # file was found, use specified config
             logger.debug("Using YAML rules from %s", yaml_rules)
-            yamllint_config = yaml_rules_path.read_text(encoding="latin-1")
+            yamllint_config = yaml_rules_path.read_text(encoding="utf-8")
         else:
             logger.debug("Cannot find %s. Using default rules.", yaml_rules)
 
