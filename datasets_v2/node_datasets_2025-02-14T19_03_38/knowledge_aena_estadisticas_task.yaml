@@ -1,6 +1,6 @@
 dataset_kwargs:
   data_files:
-    test: /root/.local/share/instructlab/datasets/node_datasets_2025-02-14T18_45_09/mmlubench_knowledge_aena_estadisticas.jsonl
+    test: /root/.local/share/instructlab/datasets/node_datasets_2025-02-14T19_03_38/mmlubench_knowledge_aena_estadisticas.jsonl
 dataset_name: null
 dataset_path: json
 doc_to_choice: '{{[choices[0], choices[1], choices[2], choices[3]]}}'

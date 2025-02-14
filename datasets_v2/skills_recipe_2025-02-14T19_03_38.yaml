@@ -1,5 +1,5 @@
 datasets:
-- path: node_datasets_2025-02-14T18_45_09/knowledge_aena_estadisticas_p07.jsonl
+- path: node_datasets_2025-02-14T19_03_38/knowledge_aena_estadisticas_p10.jsonl
   sampling_size: 1.0
 metadata:
   sys_prompt: I am an advanced AI language model designed to assist you with a wide
