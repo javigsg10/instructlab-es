@@ -1,30 +1,30 @@
-system: Eres un asistente de IA con mucho conocimiento que ayudarÃ al usuario con su tarea.
+system: Eres un asistente de IA con mucho conocimiento que ayuda al usuario con su tarea.
 
 introduction: |
-  Tu tarea es evaluar la relevancia de una respuesta dada a una consulta especÃ­fica. Esta evaluaciÃ³n debe realizarse de manera metÃ³dica respondiendo dos preguntasave:
+  Tu tarea es evaluar la relevancia de una respuesta dada a una consulta específica. Esta evaluación debe realizarse de manera metódica respondiendo dos preguntasave:
 
 principles: |
-  1. Subject Matter Relevance: Â¿La respuesta proporcionada coincide con precisiÃ³n con el tema de la consulta del usuario? Esta pregunta tne como objetivo determinar si la respuesta estÃ¡ directamete relacionada con el tema o asunto principal presentado en la consult.
-  2. Focus and Perspective Addressing: Â¿La respuesta proporcionada aborda efectivamente el enfoque o la perspectiva sobre el tema, tal como se indica en la consulta del suario? Esta pregunta busca evaluar si la respuesta no solo coincide con el tema, sino que tambiÃ©n se ajusta  la intencin o  preocupaciÃ³n especÃ­fica planteada por usuario.
+  1. Subject Matter Relevance: ¿La respuesta proporcionada coincide con precisión con el tema de la consulta del usuario? Esta pregunta tiene como objetivo determinar si la respuesta está directamete relacionada con el tema o asunto principal presentado en la consulta.
+  2. Focus and Perspective Addressing: ¿La respuesta proporcionada aborda efectivamente el enfoque o la perspectiva sobre el tema, tal como se indica en la consulta del suario? Esta pregunta busca evaluar si la respuesta no solo coincide con el tema, sino que también se ajusta a la intención o  preocupación específica planteada por usuario.
 
-  Para cada pregunta, asigna 1 punto si la respuesta cumple con el criterio, y 0 puntos si no lo cumple. DespuÃ©s de evaluar cada pegunta, proporciona comentarios detallados explicando tu razonamiento detrÃ¡s de los puntos otorgado.
+  Para cada pregunta, asigna 1 punto si la respuesta cumple con el criterio, y 0 puntos si no lo cumple. Después de evaluar cada pegunta, proporciona comentarios detallados explicando tu razonamiento detrás de los puntos otorgado.
 
-  Concluye tu evaluaciÃ³n con un resultado final que debe estrictamente ir en el siguiente formato: 'Total Score: X'. La puntuaciÃ³n total debe representar la suma de lospuntos asignados por cada pregunta, con una puntuaciÃ³n mÃ¡xima posible de 2 puntos.
-  EvalÃºa la respuesta solo en funciÃ³n de los criterios anteriores, no crees nuevas preguntas.
+  Concluye tu evaluación con un resultado final que debe estrictamente ir en el siguiente formato: 'Total Score: X'. La puntuación total debe representar la suma de lospuntos asignados por cada pregunta, con una puntuación máxima posible de 2 puntos.
+  Evalúa la respuesta solo en función de los criterios anteriores, no crees nuevas preguntas.
 
 examples: |
   Example 1:
   [Start of Question]
-  Â¿CuÃ¡l es el impacto del calentamiento global en osos polares?
+  ¿Cuál es el impacto del calentamiento global en osos polares?
   [End of Question]
 
   [Start of Response]
-  El calentamiento global provoca el derretimiento de los casquetes polares, reduciendo el hÃ¡bitat de los osos polares e impactando negativamente sus terrenos de caza.
+  El calentamiento global provoca el derretimiento de los casquetes polares, reduciendo el hábitat de los osos polares e impactando negativamente sus terrenos de caza.
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 1 (La respuesta estÃ¡ directamente relacionada con el impacto del calentamiento global en los osos polares.
-  - Alignment with Query's Focus Score: 1 (La respuesta aborda especÃ­ficamente cÃ³mo el calentamiento global afecta el hÃ¡bitat de los osos polares y sus terrenos caza.)
+  - Subject Matter Relevance Score: 1 (La respuesta está directamente relacionada con el impacto del calentamiento global en los osos polares.
+  - Alignment with Query's Focus Score: 1 (La respuesta aborda específicamente cómo el calentamiento global afecta el hábitat de los osos polares y sus terrenos caza.)
   [End of Feedback]
 
   [Start of Score]
@@ -33,7 +33,7 @@ examples: |
 
   Example 2:
   [Start of Question]
-  Â¿CÃ³mo funciona la fotosÃ­ntesis?
+  ¿Cómo funciona la fotosíntesis?
   [End of Question]
 
   [End of Response]
@@ -41,8 +41,8 @@ examples: |
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 0 (La respuesta estÃ¡ relacionada con el crecimiento de las plantas, pero no aborda especÃ­ficamee la respuesta del usuario)
-  - Alignment with Query's Focus Score: 0 (La respuesta no detalla el proceso de fotosÃ­ntesis, omitiendo el enfoque especÃ­fico de la conlta )
+  - Subject Matter Relevance Score: 0 (La respuesta está relacionada con el crecimiento de las plantas, pero no aborda específicamee la respuesta del usuario)
+  - Alignment with Query's Focus Score: 0 (La respuesta no detalla el proceso de fotosíntesis, omitiendo el enfoque específico de la conlta )
   [End of Feedback]
 
   [Start of Score]
@@ -52,16 +52,16 @@ examples: |
 
   Example 3:
   [Start of Question]
-  Â¿CuÃ¡les son los beneficios de los coches elÃ©ctricos?
+  ¿Cuáles son los beneficios de los coches eléctricos?
   [End of Question]
 
   [Start of Response]
-  Los coches elÃ©ctricos reducen la dependencia de los combustibles fÃ³siles y disminuyen las emisiones de gases de efecto invernadero.
+  Los coches eléctricos reducen la dependencia de los combustibles fósiles y disminuyen las emisiones de gases de efecto invernadero.
   [End of Response]
 
   [Start of Feedback]
-  - Subject Matter Relevance Score: 1 (La respuesta coincide con el tema de la consulta sobre los beneficios de los vehÃ­culos elÃ©ctrico )
-  - Alignment with Query's Focus Score: 1 (La respuesta aborda eficazmente los beneficios ambientales de los vehÃ­culos elÃ©ctricos, alineÃ¡ndose con el enfoque sulta )
+  - Subject Matter Relevance Score: 1 (La respuesta coincide con el tema de la consulta sobre los beneficios de los vehículos eléctrico )
+  - Alignment with Query's Focus Score: 1 (La respuesta aborda eficazmente los beneficios ambientales de los vehículos eléctricos, alineándose con el enfoque sulta )
   [End of Feedback]
 
   [Start of Score]
@@ -69,7 +69,7 @@ examples: |
   [End of Score]
 
 generation: |
-  Comienza tu respuesta proporcionando los comentarios seguidos de la puntuacion. Debes ser lo mas objetivo posible.
+  Comienza tu respuesta proporcionando los comentarios seguidos de la puntuación. Debes ser lo mas objetivo posible.
   [Start of Question]
   {question}
   [End of Question]
@@ -79,6 +79,6 @@ generation: |
   [End of Response]
 
   * Devuelve el feedback ente los tags [Start of Feedback] y [End of Feedback].
-  * Devuelve la puntuaciÃ³n final ente los tags [Start of Score] y [End of Score].
+  * Devuelve la puntuación final ente los tags [Start of Score] y [End of Score].
 start_tags: ["[Start of Feedback]", "[Start of Score]"]
 end_tags: ["[End of Feedback]", "[End of Score]"]

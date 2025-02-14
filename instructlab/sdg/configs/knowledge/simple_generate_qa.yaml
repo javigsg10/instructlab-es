@@ -1,21 +1,21 @@
-system: Eres un asistente de IA de gran conocimiento que ayudarÃ¡ al usuario con su tarea.
+system: Eres un asistente de IA de gran conocimiento que ayudar al usuario con su tarea.
 
-introduction:  Desarrolla una serie de pares de preguntas y respuestas educativas de un capÃ­tulo de un libro de texto e {domain}
+introduction:  Desarrolla una serie de pares de preguntas y respuestas educativas de un capí­tulo de un libro de texto e {domain}
 principles: | 
-  AquÃ­ estÃ¡n los requisitos:
+  Aquí­ están los requisitos:
 
-  1. Intenta no repetir el verbo en cada instrucciÃ³n para maximizar la diversidad.
-  2. El lenguaje utilizado para la instrucciÃ³n tambiÃ©n debe ser diverso. Por ejemplo, debes combinar preguntas con instrucciones imperativas.
-  3. El tipo de instrucciones debe ser similar a los ejemplos proporcionados. La instrucciÃ³n generada y la salida deben estar basadas en el documento proporcionado.
-  4. Un modelo de lenguaje GPT debe ser capaz de completar la instrucciÃ³n. Por ejemplo, no pidas al asistente que cree una salida visual o de audio. Otro ejemplo serÃ­a no pedir al asistente que te despierte a las 5 p.m. o que configure un recordatorio, ya que no puede realizar esa acciÃ³n.
-  5. Las instrucciones deben estar en inglÃ©s.
-  6. Las instrucciones deben tener de 1 a 2 oraciones. Se permite una oraciÃ³n imperativa o una pregunta.
-  7. La salida debe ser una respuesta apropiada para la entrada y la instrucciÃ³n. Las salidas largas son preferibles.
+  1. Intenta no repetir el verbo en cada instrucción para maximizar la diversidad.
+  2. El lenguaje utilizado para la instrucción también debe ser diverso. Por ejemplo, debes combinar preguntas con instrucciones imperativas.
+  3. El tipo de instrucciones debe ser similar a los ejemplos proporcionados. La instrucción generada y la salida deben estar basadas en el documento proporcionado.
+  4. Un modelo de lenguaje GPT debe ser capaz de completar la instrucción. Por ejemplo, no pidas al asistente que cree una salida visual o de audio. Otro ejemplo serí­a no pedir al asistente que te despierte a las 5 p.m. o que configure un recordatorio, ya que no puede realizar esa acción.
+  5. Las instrucciones deben estar en inglés.
+  6. Las instrucciones deben tener de 1 a 2 oraciones. Se permite una oración imperativa o una pregunta.
+  7. La salida debe ser una respuesta apropiada para la entrada y la instrucción. Las salidas largas son preferibles.
 examples: |
-  AquÃ­ hay una secciÃ³n de muestra del documento como ejemplo:
+  Aquí­ hay una sección de muestra del documento como ejemplo:
   {icl_document}
 
-  AquÃ­ hay algunos ejemplos para ayudarte a entender el tipo de preguntas que se hacen para este documento:
+  Aquí­ hay algunos ejemplos para ayudarte a entender el tipo de preguntas que se hacen para este documento:
   {icl_query_1}
   {icl_response_1}
 
@@ -25,7 +25,7 @@ examples: |
   {icl_query_3}
   {icl_response_3}
 
-  AquÃ­ esta el documento:
+  Aquí­ esta el documento:
 
   {document_outline}
   {document}

@@ -1,8 +1,8 @@
 system: Eres un asistente, experto en generar peguntas y respuestas basadas en las guidelines dadas.
-introduction: Crea una serie de preguntas de opciones multiples siguiendo las guidelines proporcionadas a continuacion.
+introduction: Crea una serie de preguntas de opciones múltiples siguiendo las guidelines proporcionadas a continuación.
 principles: | 
   Guidelines para generar:
-  * Crea preguntas de opciones multiples basadas en los datos presentados en los documentos proporcionados.
+  * Crea preguntas de opciones múltiples basadas en los datos presentados en los documentos proporcionados.
   * Cada pregunta debe ir junto a una respuesta correcte que muestre correctamente los datos.
   * Debes asegurarte de que la pregunta y respuesta estan basadas en el documento proporcionado.
   * Devuelve la pregunta entre los tags [Start of Question] y [End of Question].
@@ -10,49 +10,50 @@ principles: |
   
   Sigue esta estructura para cada ejemplo:
   [Start of Document]
-  El punto de ebullicion del agua es la temperatura a la que cambia de liquido a gas. Esto ocurre a 100 grados Celsius bajo condiciones de presion atmosferica standar.
+  El punto de ebullición del agua es la temperatura a la que cambia de liquido a gas. Esto ocurre a 100 grados Celsius bajo condiciones de presión atmósferica standar.
   [End of Document]
 
   [Start of Question]
-  Que representa el punto de ebullicion del agua?
+  ¿Qué representa el punto de ebullición del agua?
 
-  A) Solidificacion
-  B) Evaporacion
-  C) Condensacion
-  D) Congelacion 
+  A) Solidificación
+  B) Evaporación
+  C) Condensación
+  D) Congelación 
 
   [End of Question]
 
   [Start of Answer]
-  B) Evaporacion
+  B) Evaporación
   [End of Answer]
 
 examples: |
   
   Example 1:
   [Start of Document]
-  La fotosintesis es un proceso utilizado por las plantas, algas y ciertas bacterias para convertir la energia luminica en energia quimica. Este proceso involucra absorcion de luz por la clorofila, la conversion de dioxido de carbono inorganico (CO2) en compuestos organicos, y la liberacion de oxigeno como subproducto. La ecuacion general de la fotosintesis se puede representar como.   
+  La fotosíntesis es un proceso utilizado por las plantas, algas y ciertas bacterias para convertir la energia lumínica en energía química. Este proceso involucra absorción de luz por la clorofila, la conversión de dióxido de carbono inorganico (CO2) en compuestos orgánicos, y la liberación de oxígeno como subproducto. La ecuación general de la fotosíntesis se puede representar como.
+  6CO2 + 6H2O + light energy → C6H12O6 + 6O2.  
   [End of Document]
 
   [Start of Question]
-  ¿Cual es la funcion principal de la fotosintesis n las plantas?
+  ¿Cuál es la funcion principal de la fotosíntesis en las plantas?
 
-  A) Producir dioxido de carbono
-  B) Convertir la energia luminica en energia quimica
-  C) Absorber oxigeno de la atmosfera
-  D) Liberar dioxido de carbono al medio ambiente
+  A) Producir dióxido de carbono
+  B) Convertir la energía lumínica en energía química
+  C) Absorber oxígeno de la atmósfera
+  D) Liberar dióxido de carbono al medio ambiente
  
   [Start of Answer]
-   B) Convertir la energia luminica en energia quimica
+   B) Convertir la energía lumínica en energía química
   [End of Answer]
 
   Example 2:
   [Start of Document]
-  El comercio electronico abreviado como e-commerce se refiere a la compra y venta de bienes y servecios por internet. Abarca muchas transacciones, incluyendo B2B (empresa a empresa), B2C (empresa a consumidor) y C2C (consumidor a consumidor). Las plataformas de e-commerce pueden ser puramente digitales o combinar operaciones online o en tienda fisica
+  El comercio electrónico abreviado como e-commerce se refiere a la compra y venta de bienes y servecios por internet. Abarca muchas transacciones, incluyendo B2B (empresa a empresa), B2C (empresa a consumidor) y C2C (consumidor a consumidor). Las plataformas de e-commerce pueden ser puramente digitales o combinar operaciones online o en tienda física.
   [End of Document]
 
   [Start of Question]
-  El comercio electronico involucra principalmente que tipo de transacciones?
+  ¿El comercio electrónico involucra principalmente qué tipo de transacciones?
  
   A) Digital
   B) Local
@@ -65,7 +66,7 @@ examples: |
   [End of Answer]
 
 generation: |
-  Sigue las guidelines y estructura de arriba para crear preguntas de eleccion multiple, con la respuesta correcta, basadas en el documento proporcionado.
+  Sigue las guidelines y estructura de arriba para crear preguntas de eleccion múltiple, con la respuesta correcta, basadas en el documento proporcionado.
   * Devuelve la pregunta entre los tags [Start of Question] y [End of Question].
   * Devuelve la respuesta entre los tags [Start of Answer] y [End of Answer].
 

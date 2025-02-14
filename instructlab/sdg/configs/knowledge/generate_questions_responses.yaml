@@ -5,13 +5,13 @@ introduction: Desarrolla una serie de pares de pregunta y respuesta educativos a
 principles: | 
   Las preguntas deben:
 
-  * Ser autÃ³nomas, no requiriendo referencias a tablas, figuras o secciones especÃ­ficas del texto para su comprensiÃ³n.
-  * Estar enfocadas en enseÃ±ar y reforzar el conocimiento clave y los conceptos presentados en el capÃ­tulo.
-  * Evitar secciones con contenido educativo mÃ­nimo, como pÃ¡ginas de Ã­ndice o prefacios. En tales casos, responde con [NO RESPONDER].
-  * Ser directamente relevantes para el dominio del libro de texto. Por ejemplo, en un libro de texto de ciencias, las preguntas deben girar en torno a tÃ©rminos cientÃ­ficos, definiciones y aplicaciones prÃ¡cticas, mientras que en un libro de texto de derecho, deben abordar principios legales, jurisprudencia y precedentes.
-  * Estar formuladas para permitir respuestas independientes, evitando referencias directas a teoremas especificos o secciones del texto. Por ejemplo, en lugar de preguntar '¿Bajo que condiciones el punto fijo de una funcion es unico segun el Teorema 3.1.5?', pregunta 'Â¿Como contribuye el metodo de Iteracion de Puntos Fijos a entender la unicidad de una funcion?'
-  * Cubrir una variedad de niveles de dificultad para acomodar a una audiencia estudiantil diversa, desde la comprensiÃ³n bÃ¡sica hasta la avanzada.
-  * Incluir una variedad de tipos de preguntas, como opciÃ³n mÃºltiple para recordar informaciÃ³n bÃ¡sica, respuestas cortas para comprensiÃ³n mÃ¡s profunda, y preguntas de ensayo o resoluciÃ³n de problemas para evaluar habilidades de aplicaciÃ³n y anÃ¡lisis.
+  * Ser autónomas, no requiriendo referencias a tablas, figuras o secciones específicas del texto para su comprensión.
+  * Estar enfocadas en enseñar y reforzar el conocimiento clave y los conceptos presentados en el capítulo.
+  * Evitar secciones con contenido educativo mínimo, como páginas de índice o prefacios. En tales casos, responde con [UNANSWERABLE].
+  * Ser directamente relevantes para el dominio del libro de texto. Por ejemplo, en un libro de texto de ciencias, las preguntas deben girar en torno a términos cient­íficos, definiciones y aplicaciones prácticas, mientras que en un libro de texto de derecho, deben abordar principios legales, jurisprudencia y precedentes.
+  * Estar formuladas para permitir respuestas independientes, evitando referencias directas a teoremas especificos o secciones del texto. Por ejemplo, en lugar de preguntar '¿Bajo que condiciones el punto fijo de una funcion es unico segun el Teorema 3.1.5?', pregunta '¿Cómo contribuye el metodo de Iteración de Puntos Fijos a entender la unicidad de una funcion?'
+  * Cubrir una variedad de niveles de dificultad para acomodar a una audiencia estudiantil diversa, desde la comprensión básica hasta la avanzada.
+  * Incluir una variedad de tipos de preguntas, como opción múltiple para recordar información básica, respuestas cortas para comprensión más profunda, y preguntas de ensayo o resolución de problemas para evaluar habilidades de aplicación y análisis.
   * Alinear estrechamente con los objetivos de aprendizaje del libro de texto o del capitulo especifico, asegurando que las preguntas prueben que los conceptos y habilidades fundamentales que el capitulo pretende impartir.
   Sigue estrictamente este formato para cada par de pregunta y respuesta que generes al responder.
   [QUESTION]
