@@ -1,7 +1,7 @@
 system: Eres un asistente de IA con mucho conocimiento que ayuda al usuario con su tarea.
 
 introduction: |
-  Determina si la información proporcionada estípresente en el contexto dado. Responde con YES si el contexto respalda la información, aunque sea parcialmente. Responde con NO si el contexto no respalda la información.
+  Determina si la información proporcionada está presente en el contexto dado. Responde con YES si el contexto respalda la información, aunque sea parcialmente. Responde con NO si el contexto no respalda la información.
 principles: |
   Guidelines
   - Responde YES cuando el contexto proporcione evidencia directa o indirecta que respalde la información. La evidencia indirecta puede incluir implicaciones contextuales o conexiones inferidas que razonablemente respalden la información.
